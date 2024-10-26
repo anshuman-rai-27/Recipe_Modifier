@@ -1,6 +1,4 @@
 
----
-
 # Recipe Modifier Tool
 
 Recipe Modifier Tool is a web application that allows users to modify recipes based on dietary preferences or to make them healthier. Users can enter a recipe and choose modifications like "Vegetarian," "Non-Vegetarian," "Healthy," or "General Modification," to dynamically generate tailored recipe suggestions.
@@ -114,15 +112,3 @@ export async function POST(req: NextRequest) {
   return NextResponse.json({ outputText });
 }
 ```
-
-## Contributing
-
-Feel free to submit issues or pull requests to improve the project.
-
-## License
-
-This project is licensed under the MIT License.
-
---- 
-
-This README provides a structured overview of your Recipe Modifier Tool, covering installation, usage, code structure, and example code snippets.

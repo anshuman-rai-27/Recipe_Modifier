@@ -102,6 +102,24 @@ const RecipeModifier: React.FC = () => {
         const data = await response.json();
         setSuggestions(data.outputText);
     };
+    // Define the action to get suggestions dynamically
+    useCopilotAction({
+        name: "Generate Recipe Suggestions",
+        description: "Fetch suggestions for modifying the recipe input",
+        parameters: [
+            { name: "recipe", description: "The input recipe text", type: "string" },
+        ],
+        handler: async ({ recipe }) => {
+            // Simulate fetching suggestions from an API or AI model
+            const response = await fetch("/api/getSuggestions", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ recipe }),
+            });
+            const data = await response.json();
+            setSuggestions(data.outputText);
+        },
+    });
 
     const handleRecipeInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setRecipe(e.target.value);

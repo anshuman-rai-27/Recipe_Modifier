@@ -17,6 +17,13 @@ Recipe Modifier Tool is a web application that allows users to modify recipes ba
 - **CopilotKit**: Used for AI-based recipe modification suggestions
 - **API Integration**: Groq API for natural language modifications
 
+## ScreenShot
+
+![image](https://github.com/user-attachments/assets/e024ddda-8d3c-4646-b0f8-7c08c8b366c7)
+
+
+![image](https://github.com/user-attachments/assets/dbe82fe7-4790-4979-876f-cdd96651701b)
+
 ## Setup Instructions
 
 1. **Clone the repository:**
